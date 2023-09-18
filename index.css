@@ -1,3 +1,6 @@
+body {
+    font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
 /* top */
 .header_container {
     display: flex;
@@ -25,6 +28,7 @@
 .menu_list ul li {
     /* 79+38 ~ 117 */
     font-size: 14.4px;
+    height: 14px;
 }
 .menu_list ul li:nth-child(1) {
     width: 38px;
@@ -53,6 +57,7 @@
     height: 32px;
     font-size: 32px;
     margin: 0 586px 0 582px;
+    font-weight: bold;
 }
 .about h2::after {
     content: '';
@@ -83,6 +88,7 @@
     width: auto;
     height: 16px;
     font-size: 16px;
+    font-weight: bold;
 }
 .about .person p {
     width: 397px;
@@ -100,6 +106,7 @@
     width: 112px;
     height: 32px;
     font-size: 32px;
+    font-weight: bold;
     margin: 0 586px 0 582px;
 }
 .bicycle h2::after {
@@ -144,4 +151,66 @@
 .footer p {
     width: 120px;
     height: 10px;
+}
+
+
+/* sp版 */
+@media screen and (max-width: 370px) {
+    .header_container {
+        padding: 10px;
+    }
+    .menu_list {
+        padding-right: 2px;
+    }
+
+    .about h2 {
+        margin: 0 146px 0 137px;
+    }
+    .about .person {
+        margin: 82px 0 0 0;
+    }
+    .about .person::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url('https://livedoor.blogimg.jp/koyakukoyaku/imgs/e/f/ef3cf09a-s.jpg');
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        position: initial;
+        left: auto;
+        margin: 0 137px 0 138px;
+    }
+    .about .person h3,
+    .about .person p {
+        margin: 15px 34px 0 15px;
+    }
+    .about .person p {
+        width: 326px;
+    }
+
+    .bicycle h2 {
+        margin: 0 134px 0 129px;
+    }
+    .bicycle ul {
+        flex-flow: column;
+        margin: 67px 15px 0 15px;
+    }
+    .bicycle ul li {
+        width: 345px;
+        margin-bottom: 30px;
+    }
+    .bicycle ul li img {
+        height: 228px;
+    }
+
+    .footer {
+        padding: calc(117px - 34px) 159px 12px 152px;
+    }
+    .footer p {
+        font-size: 10px;
+        height: 10px;
+    }
+
 }
