@@ -1,0 +1,147 @@
+/* top */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 232px 10px 230px;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+
+.menu_list {
+    width: 117px;
+    align-self: center;
+}
+
+.menu_list ul {
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+}
+
+.menu_list ul li {
+    /* 79+38 ~ 117 */
+    font-size: 14.4px;
+}
+.menu_list ul li:nth-child(1) {
+    width: 38px;
+}
+
+.menu_list ul li:nth-child(2) {
+    width: 46px;
+
+}
+
+/* main */
+.top_capture {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.about {
+    margin-top: 89px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.about h2 {
+    width: 92px;
+    height: 32px;
+    font-size: 32px;
+    margin: 0 586px 0 582px;
+}
+.about h2::after {
+    content: '';
+    width: 101px;
+    height: 1px;
+    display: inline-block;
+    background-color: #383E45;
+    margin-top: 7px;
+}
+
+.about .person {
+    margin: 82px 379px 0px 504px;
+    position: relative;
+}
+.about .person::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-image: url('https://livedoor.blogimg.jp/koyakukoyaku/imgs/e/f/ef3cf09a-s.jpg');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    left: -130px;
+}
+.about .person h3 {
+    width: auto;
+    height: 16px;
+    font-size: 16px;
+}
+.about .person p {
+    width: 397px;
+    height: 65px;
+    font-size: 14.1px;
+    font-family: Meiryo;
+    margin-top: 15px;
+}
+
+.bicycle {
+    margin-top: 105px;
+    /* 586px 0 582px; */
+}
+.bicycle h2 {
+    width: 112px;
+    height: 32px;
+    font-size: 32px;
+    margin: 0 586px 0 582px;
+}
+.bicycle h2::after {
+    content: '';
+    display: inline-block;
+    width: 117px;
+    height: 1px;
+    background-color: #383E45;
+    margin-top: 7px;
+}
+.bicycle ul {
+    margin: 67px 230.2px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(262.8px * 3 + 16.2px * 2);
+}
+.bicycle ul li{
+    text-align: center;
+    width: 262.8px;
+}
+.bicycle ul li img {
+    height: 174px;
+    width: inherit;
+}
+.bicycle ul li h3 {
+    height: 16px;
+    width: auto;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 13px;
+}
+.bicycle ul li p {
+    height: 15px;
+    width: auto;
+    font-size: 14.4px;
+    margin: 4px;
+}
+
+.footer {
+    padding: 117px 612px 12px 604px;
+}
+.footer p {
+    width: 120px;
+    height: 10px;
+}
