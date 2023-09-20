@@ -155,7 +155,7 @@ body {
 
 
 /* sp版 */
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
     .header_container {
         padding: 10px;
     }
